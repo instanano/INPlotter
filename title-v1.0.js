@@ -12,5 +12,6 @@ var gtitle = d3.select('.dchart').append("g")
  .style("cursor", "move")
  .html("<a style='color:darkblue'>♦</a> Raw Plot")
  .style('font-size','30px')
+ .style('transform','translateY(10px)')
  .style('width','fit-content')
  .on("contextmenu", function(data,index){d3.event.preventDefault()});
