@@ -1,4 +1,3 @@
-<script>
 var o=1;var p=1;
 d3.select("#addtext").on('click', function(){
 d3.select('.dchart').append('foreignObject')
@@ -44,4 +43,3 @@ document.getElementById("peak"+i).setAttribute("height", document.getElementById
 d3.select("#xrd").on('click', function(){
 d3.select('#dtxaxis').html('2 Theta')
 })
-</script>
