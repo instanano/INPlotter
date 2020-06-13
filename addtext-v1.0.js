@@ -1,3 +1,4 @@
+<script>
 var q=1;var p=1;
 d3.select("#addtext").on('click', function(){
 d3.select('.dchart').append('foreignObject')
@@ -17,3 +18,4 @@ d3.select('.dchart').append('foreignObject')
  .style('display','inline-block')
  .on("contextmenu", function(data,index){d3.event.preventDefault()})
 })
+</script>
