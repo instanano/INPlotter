@@ -26,3 +26,18 @@ function dragged(d,e){
 d3.select(this).attr("x",d3.event.x + deltaX)
 d3.select(this).attr("y",d3.event.y + deltaY)}
 })
+
+
+
+d3.select(window).on("input", function(e) { 
+document.getElementById("gtitle").setAttribute("width", document.getElementById("dgtitle").scrollWidth + 20);
+document.getElementById("gtitle").setAttribute("height", document.getElementById("dgtitle").scrollHeight);
+
+document.getElementById("txaxis").setAttribute("width", document.getElementById("dtxaxis").scrollWidth + 20);
+document.getElementById("txaxis").setAttribute("height", document.getElementById("dtxaxis").scrollHeight);
+
+for (var i=1; i <= 50; i++){
+document.getElementById("peak"+i).setAttribute("width", document.getElementById("dpeak"+i).scrollWidth + 20);
+document.getElementById("peak"+i).setAttribute("height", document.getElementById("dpeak"+i).scrollHeight);
+}
+})
