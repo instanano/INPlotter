@@ -18,15 +18,7 @@ d3.select('.dchart').append('foreignObject')
  .style('display','inline-block')
  .on("contextmenu", function(data,index){d3.event.preventDefault()})
 
-function dragstarted(d,e){
-d3.select(this).raise().classed("active", true);
-var current = d3.select(this);
-deltaX = current.attr("x") - d3.event.x;
-deltaY = current.attr("y") - d3.event.y;} 
-function dragged(d,e){
-d3.select(this).attr("x",d3.event.x + deltaX)
-d3.select(this).attr("y",d3.event.y + deltaY)}
-})
+
 
 d3.select(window).on("input", function(e) { 
 document.getElementById("gtitle").setAttribute("width", document.getElementById("dgtitle").scrollWidth + 20);
