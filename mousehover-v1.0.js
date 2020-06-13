@@ -1,20 +1,3 @@
-var lastIndex = -1;
-function mousemove(){
- let x = d3.mouse(this)[0];
- let closest = data.reduce((best, value, i) => {
-  let absx = Math.abs(xScale(value.x) - x + 60) 
-  if(absx < best.value) {
-   return {index: i, value:absx};
-  }
-  else{
-   return best;
-  }
-  }, {index:0, value:Number.MAX_SAFE_INTEGER});  
-  d3.selectAll('.annot').remove();
-  lastIndex = closest.index;
-  mousehover(data[closest.index]);
-};
-
 function mousehover(d) { 
    svg.append("text")
     .attr('class','annot')
