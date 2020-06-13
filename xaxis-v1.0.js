@@ -1,0 +1,22 @@
+svg.append("g")
+ .attr("class", "x axis")
+ .attr("transform", "translate(0," + height + ")")
+ .call(d3.axisBottom(xScale).ticks(7))
+ .attr('font-size','25px');
+ 
+ d3.select('.dchart')
+ .append('foreignObject')
+ .call(d3.drag().on("start", dragstarted).on("drag", dragged))
+ .attr('id','txaxis')
+ .attr('x', width*0.4)
+ .attr('y', height+(height*0.07))
+ .attr("width", "201px")
+ .attr("height", "36px")
+ .append('xhtml:div')
+ .attr('id','dtxaxis')
+ .style("cursor", "move")
+ .attr("contentEditable", true)
+ .html('Wavelength(nm)')
+ .style('font-size','30px')
+ .style('width','fit-content')
+ .on("contextmenu", function(data,index){d3.event.preventDefault()});
