@@ -11,5 +11,5 @@ else if($(this).val()=='eds'){$('#txaxis').html('Energy(KeV)');$('#tyaxis').html
 else if($(this).val()=='dls'){$('#txaxis').html('Size(nm)');$('#tyaxis').html('Percent(%)')}
 else if($(this).val()=='dsc'){$('#txaxis').html('Temperature(°C)');$('#tyaxis').html('Heat&nbsp;Flow(mW)')}
 else if($(this).val()=='tga'){$('#txaxis').html('Temperature(°C)');$('#tyaxis').html('Weight(%)')}
-else if($(this).val()=='bet'){$('#txaxis').html('Relative Pressure');$('#tyaxis').html('Absorbed Volume')}
+else if($(this).val()=='bet'){$('#txaxis').html('Relative Pressure');$('#tyaxis').html('Absorbed&nbsp;Volume')}
 });
